@@ -1,0 +1,22 @@
+﻿<Window x:Class="progPoeP1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:progPoeP1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="ModuleListBox" HorizontalAlignment="Left" Height="106" Margin="10,10,0,0" VerticalAlignment="Top" Width="134" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <TextBox x:Name="ModuleNameTextBox" HorizontalAlignment="Left" Height="49" Margin="555,14,0,0" TextWrapping="Wrap" Text="ModuleName:" VerticalAlignment="Top" Width="158"/>
+        <TextBox x:Name="ModuleClassHoursPerWeekTextBox" HorizontalAlignment="Left" Height="52" Margin="557,106,0,0" TextWrapping="Wrap" Text="ModuleClassHoursPerWeek:" VerticalAlignment="Top" Width="156"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="48" Margin="26,266,0,0" VerticalAlignment="Top" Width="102" Click="Button_Click"/>
+        <Label x:Name="SelfStudyHoursLabel" Content="SelfStudyHours:" HorizontalAlignment="Left" Height="59" Margin="22,156,0,0" VerticalAlignment="Top" Width="176"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="48" Margin="148,266,0,0" VerticalAlignment="Top" Width="105" Click="Button_Click_1"/>
+        <TextBox x:Name="ModuleCodeTextBox" HorizontalAlignment="Left" Height="49" Margin="362,14,0,0" TextWrapping="Wrap" Text="ModuleCode:" VerticalAlignment="Top" Width="168"/>
+        <TextBox x:Name="ModuleCreditsTextBox" HorizontalAlignment="Left" Height="57" Margin="362,106,0,0" TextWrapping="Wrap" Text="ModuleCredits:" VerticalAlignment="Top" Width="171"/>
+        <TextBox x:Name="NumberOfWeeksInSemesterTextBox" HorizontalAlignment="Left" Height="54" Margin="362,188,0,0" TextWrapping="Wrap" Text="NumberOfWeeksInSemester:" VerticalAlignment="Top" Width="172"/>
+        <TextBox x:Name="StartDateOfSemesterTextBox" HorizontalAlignment="Left" Height="54" Margin="557,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" Text="StartDateOfSemester:"/>
+
+    </Grid>
+</Window>
